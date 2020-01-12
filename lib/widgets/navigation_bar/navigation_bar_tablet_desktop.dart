@@ -10,6 +10,22 @@ class NavigationBarTabletDesktop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           NavigationLogo(),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Text(
+                'Episodes',
+                style: TextStyle(fontSize: 18),
+              ),
+              SizedBox(
+                width: 60,
+              ),
+              Text(
+                'About',
+                style: TextStyle(fontSize: 18),
+              ),
+            ],
+          )
         ],
       ),
     );
