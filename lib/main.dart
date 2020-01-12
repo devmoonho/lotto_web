@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lotto_web/screen/home.dart';
+import 'package:lotto_web/screen/home/home_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'NanumGothic'),
       ),
-      home: Home(),
+      home: HomeView(),
     );
   }
 }
