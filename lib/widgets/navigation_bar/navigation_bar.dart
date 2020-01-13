@@ -6,9 +6,11 @@ import 'package:responsive_builder/responsive_builder.dart';
 class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-     mobile: NavigationBarMobile(), 
-     tablet: NavigationBarTabletDesktop(), 
+    return GestureDetector(
+      child: ScreenTypeLayout(
+        mobile: NavigationBarMobile(),
+        tablet: NavigationBarTabletDesktop(),
+      ),
     );
   }
 }

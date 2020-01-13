@@ -7,9 +7,7 @@ class HomeContentDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Text('1234'),
-        Text('1234'),
-        Text('1234'),
+        // Image.asset('assets/images/bg.jpg', fit: BoxFit.cover,)
       ],
     );
   }
