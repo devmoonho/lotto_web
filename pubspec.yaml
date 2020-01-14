@@ -80,6 +80,8 @@ flutter:
    - assets/images/bg.jpg
    - assets/images/app.png
    - assets/images/logo.png
+   - assets/images/appstore.png
+   - assets/images/playstore.png
 
   fonts:
   - family: NanumGothic 

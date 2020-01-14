@@ -21,12 +21,20 @@ class _AnimacionWaveState extends State<AnimacionWave> {
   Widget build(BuildContext context) {
     Size size = new Size(MediaQuery.of(context).size.width, 300.0);
     return new Scaffold(
-      backgroundColor: Colors.orange[200],
-      body: new Stack(
-        children: <Widget>[
-          new ColorCurveBody(
-              size: size, xOffset: 10, yOffset: 50, color: Colors.white),
-        ],
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [Colors.orange[600], Colors.orange[100]],
+          ),
+        ),
+        child: new Stack(
+          children: <Widget>[
+            new ColorCurveBody(
+                size: size, xOffset: 10, yOffset: 50, color: Colors.white),
+          ],
+        ),
       ),
     );
   }
@@ -52,7 +60,6 @@ class _ColorCurveBodyState extends State<ColorCurveBody>
     with TickerProviderStateMixin {
   AnimationController animationController;
   List<Offset> animList1 = [];
-
   @override
   void initState() {
     super.initState();
@@ -85,7 +92,8 @@ class _ColorCurveBodyState extends State<ColorCurveBody>
   @override
   Widget build(BuildContext context) {
     return new Container(
-      alignment: Alignment.center,
+      padding: EdgeInsets.only(top: MediaQuery.of(context).size.height - 300),
+      alignment: Alignment.topCenter,
       child: new AnimatedBuilder(
         animation: new CurvedAnimation(
           parent: animationController,
@@ -96,6 +104,7 @@ class _ColorCurveBodyState extends State<ColorCurveBody>
               ? Image.network(
                   '',
                   width: widget.size.width,
+                  // height: widget.size.height,
                   height: widget.size.height,
                   fit: BoxFit.cover,
                 )
