@@ -24,8 +24,8 @@ class _AnimacionWaveState extends State<AnimacionWave> {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
+            begin: Alignment.centerRight,
+            end: Alignment.centerLeft,
             colors: [Colors.orange[600], Colors.orange[100]],
           ),
         ),
