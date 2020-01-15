@@ -260,119 +260,119 @@ class _HomeContentDesktopState extends State<HomeContentDesktop> {
                                 ),
                               ),
                               Container(
-                                  height: 600,
-                                  width: 600,
-                                  child: GridView.count(
-                                    primary: false,
-                                    padding: const EdgeInsets.all(20),
-                                    crossAxisSpacing: 10,
-                                    mainAxisSpacing: 10,
-                                    crossAxisCount: 2,
-                                    children: <Widget>[
-                                      Container(
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: <Widget>[
-                                            SizedBox(height: 20),
-                                            Container(
-                                              height: 100,
-                                              child: Icon(
-                                                  FontAwesomeIcons.searchDollar,
-                                                  size: 100,
-                                                  color: Colors.orange),
+                                height: 600,
+                                width: 600,
+                                child: GridView.count(
+                                  primary: false,
+                                  padding: const EdgeInsets.all(20),
+                                  crossAxisSpacing: 10,
+                                  mainAxisSpacing: 10,
+                                  crossAxisCount: 2,
+                                  children: <Widget>[
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Column(
+                                        children: <Widget>[
+                                          SizedBox(height: 20),
+                                          Container(
+                                            height: 100,
+                                            child: Icon(
+                                                FontAwesomeIcons.searchDollar,
+                                                size: 100,
+                                                color: Colors.orange),
+                                          ),
+                                          SizedBox(height: 20),
+                                          const Text('당첨 정보 조회',
+                                              style: TextStyle(fontSize: 30)),
+                                          SizedBox(height: 10),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: const Text(
+                                              '실시간 당첨정보 제공하며 이전 당첨 정보와 함께 분석도구를 제공해 드립니다.',
+                                              style:
+                                                  TextStyle(color: Colors.grey),
                                             ),
-                                            SizedBox(height: 20),
-                                            const Text('당첨 정보 조회',
-                                                style: TextStyle(fontSize: 30)),
-                                            SizedBox(height: 10),
-                                            Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: const Text(
-                                                '실시간 당첨정보 제공하며 이전 당첨 정보와 함께 분석도구를 제공해 드립니다.',
-                                                style:
-                                                    TextStyle(color: Colors.grey),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                      Container(
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: <Widget>[
-                                            SizedBox(height: 20),
-                                            Container(
-                                              height: 100,
-                                              child: Icon(FontAwesomeIcons.penAlt,
-                                                  size: 80, color: Colors.orange),
+                                    ),
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Column(
+                                        children: <Widget>[
+                                          SizedBox(height: 20),
+                                          Container(
+                                            height: 100,
+                                            child: Icon(FontAwesomeIcons.penAlt,
+                                                size: 80, color: Colors.orange),
+                                          ),
+                                          SizedBox(height: 20),
+                                          const Text('로또번호생성',
+                                              style: TextStyle(fontSize: 30)),
+                                          SizedBox(height: 10),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: const Text(
+                                              '전체수 합, 저고비, 홀짝 비율, 연속번호, 번호 위치별 합, 1의수합, 10의수합, 포함수, 제외수, 당첨 제외',
+                                              style:
+                                                  TextStyle(color: Colors.grey),
                                             ),
-                                            SizedBox(height: 20),
-                                            const Text('로또번호생성',
-                                                style: TextStyle(fontSize: 30)),
-                                            SizedBox(height: 10),
-                                            Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: const Text(
-                                                '전체수 합, 저고비, 홀짝 비율, 연속번호, 번호 위치별 합, 1의수합, 10의수합, 포함수, 제외수, 당첨 제외',
-                                                style:
-                                                    TextStyle(color: Colors.grey),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                      Container(
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: <Widget>[
-                                            SizedBox(height: 20),
-                                            Container(
-                                              height: 100,
-                                              child: Icon(
-                                                  FontAwesomeIcons.chartBar,
-                                                  size: 80,
-                                                  color: Colors.orange),
+                                    ),
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Column(
+                                        children: <Widget>[
+                                          SizedBox(height: 20),
+                                          Container(
+                                            height: 100,
+                                            child: Icon(
+                                                FontAwesomeIcons.chartBar,
+                                                size: 80,
+                                                color: Colors.orange),
+                                          ),
+                                          SizedBox(height: 20),
+                                          const Text('통계그래프',
+                                              style: TextStyle(fontSize: 30)),
+                                          SizedBox(height: 10),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: const Text(
+                                              '당첨정보와 번호생성에 필요한 모든 자료를 눈으로 쉽게 찾아 볼 수 있습니다.',
+                                              style:
+                                                  TextStyle(color: Colors.grey),
                                             ),
-                                            SizedBox(height: 20),
-                                            const Text('통계그래프',
-                                                style: TextStyle(fontSize: 30)),
-                                            SizedBox(height: 10),
-                                            Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: const Text(
-                                                '당첨정보와 번호생성에 필요한 모든 자료를 눈으로 쉽게 찾아 볼 수 있습니다.',
-                                                style:
-                                                    TextStyle(color: Colors.grey),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                      Container(
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: <Widget>[
-                                            SizedBox(height: 20),
-                                            Icon(FontAwesomeIcons.qrcode,
-                                                size: 100, color: Colors.orange),
-                                            SizedBox(height: 20),
-                                            const Text('QR Scan',
-                                                style: TextStyle(fontSize: 30)),
-                                            SizedBox(height: 10),
-                                            Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: const Text(
-                                                'QR Code를 통해 당첨여부를 바로 확인 할 수 있습니다.',
-                                                style:
-                                                    TextStyle(color: Colors.grey),
-                                              ),
+                                    ),
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Column(
+                                        children: <Widget>[
+                                          SizedBox(height: 20),
+                                          Icon(FontAwesomeIcons.qrcode,
+                                              size: 100, color: Colors.orange),
+                                          SizedBox(height: 20),
+                                          const Text('QR Scan',
+                                              style: TextStyle(fontSize: 30)),
+                                          SizedBox(height: 10),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: const Text(
+                                              'QR Code를 통해 당첨여부를 바로 확인 할 수 있습니다.',
+                                              style:
+                                                  TextStyle(color: Colors.grey),
                                             ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
+                              ),
                             ],
                           ),
                         ],
@@ -395,7 +395,7 @@ class _HomeContentDesktopState extends State<HomeContentDesktop> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Container(
-                            padding: EdgeInsets.only(top: 20),
+                            padding: EdgeInsets.only(top: 10),
                             width: 400,
                             child: Center(
                               child: Column(
@@ -404,14 +404,14 @@ class _HomeContentDesktopState extends State<HomeContentDesktop> {
                                     controller: _emailController,
                                     keyboardType: TextInputType.emailAddress,
                                     decoration: InputDecoration(
-                                      hintText: 'Email',
+                                      hintText: '이메일',
                                     ),
                                   ),
                                   TextField(
                                     controller: _subjectController,
                                     keyboardType: TextInputType.emailAddress,
                                     decoration: InputDecoration(
-                                      hintText: 'Subject',
+                                      hintText: '제목',
                                     ),
                                   ),
                                   TextField(
@@ -419,13 +419,17 @@ class _HomeContentDesktopState extends State<HomeContentDesktop> {
                                     keyboardType: TextInputType.multiline,
                                     maxLines: 4,
                                     decoration: InputDecoration(
-                                      hintText: 'Message',
+                                      hintText: '메시지',
                                       contentPadding: new EdgeInsets.symmetric(
                                           vertical: 40.0),
                                     ),
                                   ),
+                                  SizedBox(height: 10),
                                   RaisedButton(
-                                    child: Text('Send Email'),
+                                    child: Text(
+                                      '보내기',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                     color: Colors.deepOrangeAccent,
                                     onPressed: _sendEmail,
                                   ),
